@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<title>Quantum OS — Saleh Amoo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type="icon" href="⚛">
+<!-- بارگذاری Puter.js برای هوش مصنوعی واقعی -->
+<script src="https://js.puter.com/v2/"></script>
+<link rel="stylesheet" href="ii6k.css" />
+<style></style>
+</head>
+<body>
+
+<header class="neon-text">Quantum OS</header>
+
+<div id="boot"><h1>Quantum OS</h1></div>
+<!--<div id="boot2"><h1>kiyan Edition</h1></div>-->
+
+
+<div id="lockScreen">
+ <div class="lock-wallpaper"></div>
+
+ <div class="lock-content">
+  <h2>Quantum OS</h2>
+  <p id="lockHint">Swipe up to unlock</p>
+
+  <div id="passwordBox" class="hidden">
+   <input type="password" id="lockPass" placeholder="Password">
+   <button class="btn" onclick="unlock()">Unlock</button>
+   <p id="lockError"></p>
+  </div>
+ </div>
+</div>
+
+
+
+<div id="login">
+ <div class="card">
+  <h3 style="color:var(--neon-cyan);margin-bottom:20px;">Login</h3>
+  <input id="username" placeholder="Username">
+  <button class="btn" onclick="login()" style="margin-top:20px;">Login</button>
+ </div>
+</div>
+
+
+<div class="apps">
+ <div class="app neon-card" onclick="browser()"><span>🌐</span>Browser</div>
+ <div class="app neon-card" onclick="phone()"><span>📞</span>Phone</div>
+ <div class="app neon-card" onclick="files()"><span>📁</span>Files</div>
+ <div class="app neon-card" onclick="music()"><span>🎵</span>Music</div>
+ <div class="app neon-card" onclick="settings()"><span>⚙️</span>Settings</div>
+ <div class="app neon-card" onclick="about()"><span>ℹ️</span>About</div>
+ <div class="app neon-card" onclick="openAI()"><span>🤖</span>AI</div>
+ <div class="app neon-card" onclick="openFinance()"><span>💹</span>Finance</div>
+ <div class="app neon-card" onclick="openCalc()"><span>🧮</span>Calculator</div>
+ <div class="app neon-card" onclick="openSystem()"><span>⚡</span>System</div>
+
+
+ <div class="app neon-card" onclick="openTicTacToe()"><span>❌</span>Tic Tac Toe</div>
+ <div class="app neon-card" onclick="openSudoku()"><span>🔢</span>Sudoku</div>
+ <div class="app neon-card" onclick="openNumberGuess()"><span>🔮</span>Guess Game</div>
+<div class="app neon-card" onclick="openRPS()">
+ <span>🪨</span>Rock Paper
+</div>
+
+<div class="app neon-card" onclick="openReaction()">
+ <span>🚨</span>Reaction
+</div>
+
+<div class="app neon-card" onclick="openMemory()">
+ <span>🧠</span>Memory
+</div>
+
+
+<div class="app neon-card" onclick="openSnakeMobile()">
+ <span>🐍</span>Snake
+</div>
+
+<div class="app neon-card" onclick="openClickGame()">
+ <span>👆</span>Click Speed
+</div>
+
+
+<div class="app neon-card" onclick="openLeaderboard()">
+ <span>🏆</span>Leaderboard
+</div>
+
+ <div class="app neon-card shutdown" onclick="shutdownSystem()"><span>🌀</span>Shutdown</div>
+ <div class="app neon-card" onclick="about2()"><span>❔️</span>Developer</div>
+</div>
+
+<div class="modal" id="modal">
+ <div class="box">
+  <button class="btn" onclick="closeM()">Close</button>
+  <div id="content" style="margin-top:16px;"></div>
+ </div>
+</div>
+
+<script src="ii6k.js"></script>
+</body>
+</html>
